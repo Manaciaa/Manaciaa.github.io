@@ -1,0 +1,109 @@
+:root {
+  --bg-primary-color: rgb(0, 0, 0);
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit
+}
+
+#bg1 {
+  background-image:url("https://c.wallhere.com/photos/45/9a/1920x1200_px_nature_pokemon-1004643.jpg!d");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+#bg_kanto{
+  background-image: url("/Assets/bg_kanto.png")
+}
+#bg_johto{
+  background-image: url("/Assets/bg_johto.webp");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#bg_hoenn{
+  background-image: url("/Assets/bg_hoenn.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#bg_sinnoh{
+  background-image: url("/Assets/bg_sinnoh.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#bg_unys{
+  background-image: url("/Assets/bg_unys.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+body header nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body header nav a {
+  flex: 1 1 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+body header nav a #maison {
+  width: 50px;
+  height: 50px;
+}
+
+body header nav #h1_special {
+  flex: 1 1 90%;
+  color: var(--bg-primary-color);
+  font-size: 2.5rem; 
+  text-align: center;
+}
+  
+body main .gen_container{
+  display:flex;
+  font-size: 1.5rem;
+  margin: 4rem;
+  justify-content: center;
+}
+
+body main .gen_container .img_gen {
+  width: 450px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+body main #title {
+  display:flex;
+  font-size: 1.5rem;
+  margin: 4rem;
+  justify-content: center;
+}
+
+
+body main .premiere_gen,
+body main .deuxieme_gen, 
+body main .troisieme_gen {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+body main .premiere_gen .gen_game,
+body main .deuxieme_gen .gen_game,
+body main .troisieme_gen .gen_game{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
